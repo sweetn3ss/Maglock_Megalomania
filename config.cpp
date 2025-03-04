@@ -3,6 +3,7 @@ class cfgPatches {
         name="Maglock Megalomania";
         authors[]={
             "cardboardboxo",
+            "Daisy",
             "Gray"
         };
         units[]={};
@@ -14,11 +15,15 @@ class cfgPatches {
     };
 };
 class cfgFunctions {
-    class MLMM {
+    /*class MLMM {
         class functions {};
-    };
+    };*/
     class MLMM_init {
+        file = "Maglock_Megalomania\functions";
         class mlmmInit {
+            postInit = 1;
+        };
+        class mlmmKeybindsSettings {
             postInit = 1;
         };
     };
